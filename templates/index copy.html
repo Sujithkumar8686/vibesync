@@ -6,6 +6,9 @@
 </head>
 <body>
 
+<!-- PARTICLE BACKGROUND -->
+<canvas id="particles"></canvas>
+
 <div class="container">
 
     <h1>🎧 VibeSync</h1>
@@ -13,7 +16,15 @@
     <h2>Choose Your Vibe</h2>
     <button onclick="playSound('chill')">Chill 🌿</button>
     <button onclick="playSound('energy')">Energy ⚡</button>
-    <button onclick="playSound('spirit lifter')">spirit lifter ⚡🌿</button>
+    <button onclick="playSound('rain')">Rain 🌧️</button>
+
+    <!-- AUDIO CONTROLS -->
+    <div>
+        <button onclick="toggleSound()">▶️ / ⏸️ Toggle</button>
+        <button onclick="stopSound()">⏹️ Stop</button>
+    </div>
+
+    <p id="status">No sound playing</p>
 
     <h2>Chat with VibeBot 🤖</h2>
 
